@@ -5,9 +5,9 @@
     <session-factory>
         <!-- Database connection settings -->
         <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
-        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/mi_base</property>
-        <property name="hibernate.connection.username">admin</property>
-        <property name="hibernate.connection.password">admin123</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/</property>
+        <property name="hibernate.connection.username"></property>
+        <property name="hibernate.connection.password"></property>
 
         <!-- SQL dialect -->
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
@@ -19,10 +19,7 @@
         <property name="hibernate.current_session_context_class">thread</property>
         
 
-        <!-- Mapping resources -->
-        <!-- Or <mapping resource="com/example/MyEntity.hbm.xml"/> -->
         <mapping class="org.uv.tcswpractica03.Empleados"/>
-        <mapping class="org.uv.tcswpractica03.Departamentos"/>
 
     </session-factory>
 </hibernate-configuration>
